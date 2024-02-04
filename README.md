@@ -19,19 +19,6 @@ OpenPB allows you to integrate a progress bar into your Python scripts, providin
 
 Create an instance of OpenPB, start, increment, and finish the progress bar as shown below:
 
-## Function Reference
-
-| Function              | Description                                                                                   |
-|-----------------------|-----------------------------------------------------------------------------------------------|
-| `__init__(...)`       | Initializes the OpenPB instance with parameters such as total iterations, length, prefix, etc.|
-| `OpenPB_start()`      | Starts the progress bar and sets the start time.                                              |
-| `OpenPB_finish()`     | Completes the progress bar and prints a newline.                                              |
-| `OpenPB_increment(step=1)` | Increments the progress bar by the specified step.                                        |
-| `OpenPB_set_prefix(new_prefix)` | Sets a new prefix for the progress bar.                                                |
-| `OpenPB_update(iteration)` | Updates the progress bar based on the provided iteration.                               |
-
-### Example:
-
 ```python
 from openpb import OpenPB
 import time
@@ -53,6 +40,18 @@ for i in range(100):
 # Finish the progress bar
 progress_bar.OpenPB_finish()
 ```
+
+## Function Reference
+
+| Function              | Description                                                                                   |
+|-----------------------|-----------------------------------------------------------------------------------------------|
+| `__init__(...)`       | Initializes the OpenPB instance with parameters such as total iterations, length, prefix, etc.|
+| `OpenPB_start()`      | Starts the progress bar and sets the start time.                                              |
+| `OpenPB_finish()`     | Completes the progress bar and prints a newline.                                              |
+| `OpenPB_increment(step=1)` | Increments the progress bar by the specified step.                                        |
+| `OpenPB_set_prefix(new_prefix)` | Sets a new prefix for the progress bar.                                                |
+| `OpenPB_update(iteration)` | Updates the progress bar based on the provided iteration.                               |
+
 
 ## Contributing
 
